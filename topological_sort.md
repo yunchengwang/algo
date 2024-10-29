@@ -5,10 +5,12 @@ from collections import defaultdict, deque
 
 def kahns_topological_sort(vertices, edges):
     # Step 1: Create the adjacency list representation of the graph
+    graph = defaultdict(list)
     in_degree = {v: 0 for v in vertices}  # Initialize in-degree of all vertices to 0
 
     # Step 2: Build the graph and compute in-degrees of each vertex
     for u, v in edges:
+        graph[u].append(v)
         in_degree[v] += 1  # Increment the in-degree of the destination vertex
 
     # Step 3: Initialize the queue with all vertices that have in-degree of 0
