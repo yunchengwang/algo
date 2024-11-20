@@ -213,3 +213,31 @@ def f1_score(y_true, y_pred):
     f1_scores = [_f1_single(true, pred) for true, pred in zip(y_true, y_pred)]
     return sum(f1_scores) / len(f1_scores)
 ```
+
+### Perplexity
+
+```python
+def calculate_perplexity(test_set, model):
+    """
+    Calculate perplexity for a given test set and language model.
+
+    Args:
+        test_set: List of tokenized sentences (list of list of words).
+        model: Function that predicts the probability of a word given its context.
+
+    Returns:
+        Perplexity (float)
+    """
+    log_prob_sum = 0
+    word_count = 0
+
+    for sentence in test_set:
+        for i in range(1, len(sentence)):  # Start from the second word
+            context = sentence[:i]  # Words before the current word
+            word = sentence[i]  # Current word
+            prob = model(context, word)  # Model's probability for the word
+            log_prob_sum += -np.log2(prob)  # Accumulate negative log probabilities
+            word_count += 1
+
+    return 2 ** (log_prob_sum / word_count)
+```
