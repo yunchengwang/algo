@@ -2,17 +2,13 @@
 
 ## Offline
 
-| **Frameworks / Platforms**  |  **Description**|  **Tutorials/lessons**|  **Reference**| 
-|--------|------------|------------|------------|
-|**Azure AI Studio Evaluation (Microsoft)**|Azure AI Studio is an all-in-one AI platform for building, evaluating, and deploying generative AI solutions and custom copilots.Technical Landscape: No code: model catalog in AzureML studio & AI studio, Low-code: as CLI, Pro-code: as azureml-metrics SDK|[Tutorials](https://learn.microsoft.com/en-us/azure/ai-studio/concepts/evaluation-approach-gen-ai)|[Link](https://ai.azure.com/)|
-|**Prompt Flow (Microsoft)**|A suite of development tools designed to streamline the end-to-end development cycle of LLM-based AI applications, from ideation, prototyping, testing, and evaluation to production, deployment, and monitoring.|[Tutorials](https://microsoft.github.io/promptflow/how-to-guides/quick-start.html)|[Link](https://github.com/microsoft/promptflow)|
-|**Weights & Biases(Weights & Biases)**|A Machine Learning platform to quickly track experiments, version and iterate on datasets, evaluate model performance, reproduce models, visualize results and spot regressions, and share findings with colleagues. | [Tutorias](https://docs.wandb.ai/tutorials), [DeepLearning.AI Lesson](https://learn.deeplearning.ai/evaluating-debugging-generative-ai) | [Link](https://docs.wandb.ai/)  |
-|**LangSmith (LangChain)**|Helps the user trace and evaluate language model applications and intelligent agents to help user move from prototype to production. | [Tutorials](https://docs.smith.langchain.com/evaluation)|  [Link](https://www.langchain.com/langsmith) |
-|**TruLens (TruEra)**| TruLens provides a set of tools for developing and monitoring neural nets, including LLMs. This includes both tools for the evaluation of LLMs and LLM-based applications with TruLens-Eval and deep learning explainability with TruLens-Explain.  | [Tutorials](https://www.trulens.org/trulens_explain/quickstart/), [DeepLearning.AI Lesson](https://learn.deeplearning.ai/building-evaluating-advanced-rag)|  [Link](https://github.com/truera/trulens) |
-|**Vertex AI Studio (Google)**| You can evaluate the performance of foundation models and your tuned generative AI models on Vertex AI. The models are evaluated using a set of metrics against an evaluation dataset that you provide.   | [Tutorials](https://cloud.google.com/vertex-ai/docs/generative-ai/models/evaluate-models)|  [Link](https://cloud.google.com/vertex-ai?hl=en) |
-|**Amazon Bedrock**| Amazon Bedrock supports model evaluation jobs. The results of a model evaluation job allow you to evaluate and compare a model's outputs, and then choose the model best suited for your downstream generative AI applications. Model evaluation jobs support common use cases for large language models (LLMs) such as text generation, text classification, question and answering, and text summarization.  | [Tutorials](https://docs.aws.amazon.com/bedrock/latest/userguide/model-evaluation.html)|  [Link](https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock.html) |
-|**DeepEval (Confident AI)**|An open-source LLM evaluation framework for LLM applications. |[Examples](https://github.com/confident-ai/deepeval/tree/main/examples) | [Link](https://github.com/confident-ai/deepeval) |
-|**Parea AI**|Parea helps AI Engineers build reliable, production-ready LLM applications. Parea provides tools for debugging, testing, evaluating, and monitoring LLM-powered applications. |[Article on evals](https://docs.parea.ai/blog/eval-metrics-for-llm-apps-in-prod) | [Link](https://docs.parea.ai/evaluation/overview) |
+| **Benchmarks** | **Description** |  **Reference URL**| 
+|--------|------------|------------|
+| **GLUE Benchmark**| GLUE (General Language Understanding Evaluation) benchmark provides a standardized set of diverse NLP tasks to evaluate the effectiveness of different language models | https://gluebenchmark.com/ |
+|**SuperGLUE Benchmark**|Compares more challenging and diverse tasks with GLUE, with comprehensive human baselines| https://super.gluebenchmark.com/ |
+|**HellaSwag** |Evaluates how well an LLM can complete a sentence |https://rowanzellers.com/hellaswag/  |
+|**TruthfulQA** |Measures truthfulness of model responses | https://github.com/sylinrl/TruthfulQA |
+|**MMLU** | MMLU ((Massive Multitask Language Understanding) evaluates how well the LLM can multitask | https://github.com/hendrycks/test |
 
 ## Online
 
